@@ -3,23 +3,18 @@
 :root {
     --primary: #314E70;
     --primaryaccent: #35D5D0;
+    --primary-2: #1A70B8;
     --primarybackground: #AC440F;
-    --secondary: #ffffff;
-    --secondaryaccent: #555;
-    --tertiary: #BEA7E5;
-    --tertiary-2: #A181DA;
-    --tertiary-3: #B094E0;
     --light: #F8F4F9;
     --lightaccent: #eee;
     --shade: #000;
     --shadeaccent: gray;
 
-
     --font-1: 'Martel', serif;
     --font-2: 'Montserrat', sans-serif;
     --font-3: 'Open Sans', sans-serif;
+    --font-4: 'Source Sans Pro', sans-serif;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -117,35 +112,38 @@ footer p {
 }
 
 ::placeholder {
-    color: var(--light);
+    color: var(--black);
     opacity: 1;
+    font-size: 0.9vw;
+    font-family: var(--font-4);
 }
 
 input[type=text],
 select {
     width: 35vw;
-    padding: 0.7vw 1.5vw;
+    padding: 0.7vw 1.4vw 0.7vw 0.7vw;
     margin: 0.7vw 0;
     display: inline-block;
-    border: 1px solid var(--tertiary-3);
+    border: 1px solid var(--shade);
     border-radius: 0.4vw;
     box-sizing: border-box;
     color: var(--shade);
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
+    width: 15%;
+    background-color: var(--primary);
+    color: var(--light);
     padding: 0.7vw 1.5vw;
     margin: 0.2vw 0;
     border: none;
-    border-radius: 1vw;
+    border-radius: 0.4vw;
     cursor: pointer;
+    font-size: 0.9vw;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--shade);
 }
 
 label {
@@ -157,23 +155,25 @@ label {
 textarea {
     width: 35vw;
     height: 12vw;
-    margin: 0.7vw 0;;
-    
+    margin: 0.7vw 0;
+    ;
+
 }
+
 /**********************************************************Classes Selectors*/
 
 .contactform {
     border-radius: 0.5vw;
-    background-color: var(--tertiary-3);
+    background-color: var(--primary-2);
     padding: 1vw;
     margin: 0vw 4vw;
     width: 40vw;
     float: right;
-    
 }
 
 .container {
     width: "100%;
+
 }
 
 .container_left {
@@ -272,7 +272,7 @@ container_right {
 }
 
 #hireMe {
-    background-color: var(--tertiary);
+    background-color: var(--primary);
     padding: 4vw 0vw 2vw 0vw;
     color: var(--light);
     height: 52vw;
