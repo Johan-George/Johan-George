@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?&family=Martel:wght@200&family=Source+Sans+Pro&family=Open+Sans:wght@300&family=Montserrat:wght@300&display=swap');
+
+:root {
+    --primary: #314E70;
+    --primaryaccent: #35D5D0;
+    --primarybackground: #AC440F;
+    --secondary: #ffffff;
+    --secondaryaccent: #555;
+    --tertiary: #BEA7E5;
+    --tertiary-2: #A181DA;
+    --tertiary-3: #B094E0;
+    --light: #F8F4F9;
+    --lightaccent: #eee;
+    --shade: #000;
+    --shadeaccent: gray;
+
+
+    --font-1: 'Martel', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Open Sans', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: inline;
+}
+
+body {
+    max-width: 100%;
+    margin: auto;
+
+}
+
+h1 {
+    font-family: var(--font-1);
+    font-size: 6vw;
+    margin: 9vw 1vw 2vw 6vw;
+}
+
+h2,
+nav {
+    font-family: var(--font-2);
+}
+
+h2 {
+    font-size: 6vw;
+    padding: 0vw 2.0vw 0vw 2.0vw;
+}
+
+h3 {
+    font-family: var(--font-2);
+    font-size: 3vw;
+    text-align: center;
+
+}
+
+h4 {
+    font-family: var(--font-1);
+    font-size: 2.5vw;
+    text-decoration: underline;
+}
+
+section {
+    padding-bottom: 5vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--shadeaccent);
+}
+
+a:active {
+    color: var(--shade);
+}
+
+
+p {
+    font-family: var(--font-3);
+}
+
+i {
+    padding: 3vw;
+}
+
+nav {
+    padding: 4vw 0vw 4vw 0vw;
+    font-size: 2.5vw;
+}
+
+nav a {
+    padding: 2vw;
+}
+
+ul {
+    font-family: var(--font-3);
+    list-style-type: disc;
+    text-align: left;
+    padding: 2vw 0vw 0vw 7vw;
+}
+
+footer {
+    font-size: 2vw;
+    margin: 0vw 4vw 4vw 4vw;
+    padding: 4vw 5vw 0vw 5vw;
+    column-count: 3;
+    height: 12vw;
+    line-height: 5;
+    text-align: center;
+
+}
+
+footer p {
+    font-family: var(--font-2);
+    border-bottom: solid #000;
+    margin: 0 3vw 0 3vw;
+}
+
+::placeholder {
+    color: var(--light);
+    opacity: 1;
+}
+
+input[type=text],
+select {
+    width: 35vw;
+    padding: 0.7vw 1.5vw;
+    margin: 0.7vw 0;
+    display: inline-block;
+    border: 1px solid var(--tertiary-3);
+    border-radius: 0.4vw;
+    box-sizing: border-box;
+    color: var(--shade);
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7vw 1.5vw;
+    margin: 0.2vw 0;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label {
+    font-family: var(--font-3);
+    font-size: 1.3vw;
+    padding: 3px;
+}
+
+textarea {
+    width: 35vw;
+    height: 12vw;
+    margin: 0.7vw 0;;
+    
+}
+/**********************************************************Classes Selectors*/
+
+.contactform {
+    border-radius: 0.5vw;
+    background-color: var(--tertiary-3);
+    padding: 1vw;
+    margin: 0vw 4vw;
+    width: 40vw;
+    float: right;
+    
+}
+
+.container {
+    width: "100%;
+}
+
+.container_left {
+    width: 45vw;
+    float: left;
+    clear: left;
+    font-size: 2vw;
+    text-align: center;
+    padding: 5vw 0 0 3vw;
+}
+
+container_right {
+    float: right;
+    clear: right;
+    width: 55vw;
+}
+
+.copyright {
+    font-size: 1vw;
+    text-align: center;
+    font-family: var(--font-2);
+}
+
+.Welcome {
+    height: 52vw;
+}
+
+.Welcome p {
+    font-size: 2vw;
+    margin-top: 10vw;
+}
+
+.left-welcome {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.right-welcome {
+    float: right;
+    clear: right;
+    text-align: center;
+    width: 50%;
+}
+
+
+.About h2 {
+    text-align: center;
+    padding: 0vw 1vw 1vw 1vw;
+}
+
+.abtDesc {
+    font-size: 1.5vw;
+    color: var(--light);
+    text-align: center;
+    font-family: var(--font-3);
+    border-left: solid;
+    border-right: solid;
+    border-width: 1vw;
+    padding: 0.4vw 4vw 0vw 4vw;
+}
+
+.logo {
+    margin: 2.5vw 1vw 0vw 27vw;
+    width: 13%;
+    border-radius: 20vw;
+    box-shadow: 0vw 0.46vw hsl(207, 75%, 21%);
+}
+
+
+.myImg {
+    border-radius: 20vw;
+    box-shadow: 1.4vw 1vw #000;
+}
+
+.square {
+    background-color: var(--primary);
+    height: 33vw;
+    width: 60vw;
+    margin: 1vw 20vw 0vw 13vw;
+    padding: 4vw 3vw .5vw 3vw;
+    box-shadow: 2.0vw 1.5vw var(--primaryaccent);
+}
+
+/***********************************************************************ID Selectors*/
+
+#About {
+    background-color: #AC440F;
+    color: var(--light);
+    height: 50vw;
+    padding: 4.0vw 3vw 6vw 3vw;
+}
+
+#Projects {
+    background-color: var(--lightaccent);
+    padding: 2vw 0vw 40vw 0vw;
+}
+
+#hireMe {
+    background-color: var(--tertiary);
+    padding: 4vw 0vw 2vw 0vw;
+    color: var(--light);
+    height: 62vw;
+}
+
+/************************************************************************Animations*/
