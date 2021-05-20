@@ -219,12 +219,6 @@ container_right {
     width: 50%;
 }
 
-
-.About h2 {
-    text-align: center;
-    padding: 0vw 1vw 1vw 1vw;
-}
-
 .abtDesc {
     font-size: 1.5vw;
     color: var(--light);
@@ -250,10 +244,9 @@ container_right {
 
 .square {
     background-color: var(--primary);
-    height: 33vw;
     width: 60vw;
-    margin: 1vw 20vw 0vw 13vw;
-    padding: 4vw 3vw .5vw 3vw;
+    margin: 2vw 10vw 0vw 13vw;
+    padding: 2vw 3vw .5vw 3vw;
     box-shadow: 2.0vw 1.5vw var(--primaryaccent);
 }
 
