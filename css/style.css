@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?&family=Martel:wght@200&family=Source+Sans+Pro&family=Open+Sans:wght@300&family=Montserrat:wght@300&display=swap');
+
+
+:root {
+    --primary: #C5FFFD;
+    --primary-2: #415A77;
+    --light: #fff;
+    --lightaccent: #F1F2F6;
+    --shade: #0D1B2A;
+    --shadeaccent: #1B263B;
+    --font-1: 'Martel', serif;
+    --font-2: 'Montserrat', sans-serif;
+    --font-3: 'Open Sans', sans-serif;
+    --font-4: 'Source Sans Pro', sans-serif;
+}
+
+/* CORRESPONDS WITH SECTIONS IN THE HTML*/
+
+/*NAVIGATION*/
+
+body {
+    background-color: var(--light);
+}
+
+header:hover {
+    box-shadow: 0vw 0vw 0.9vw 0.5vw #888888;
+    transition: 0.1s;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.container_2 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+header p {
+    float: left;
+    font-size: 3vw;
+    margin: 2vw 0;
+    font-family: var(--font-2);
+    color: var(--shade);
+
+}
+
+nav {
+    float: right;
+    font: sans-serif;
+    font-family: var(--font-2);
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 4vw;
+    padding-top: 2.5vw;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--shade);
+    border-top: solid #F1F2F6 0.2vw;
+    transition: padding-top 100ms;
+    font-size: 2vw;
+}
+
+nav a:hover {
+    padding-top: 0.5vw;
+    border-top: solid #000 0.2vw;
+}
+
+/*Page 1*/
+
+.General {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5vw;
+    border-top: solid var(--lightaccent);
+}
+
+.General p {
+
+    font-size: 2vw;
+    font-family: var(--font-3);
+    color: var(--shade);
+}
+
+.left-welcome {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.desc {
+    margin-top: 9vw;
+    line-height: 1.65;
+}
+
+.right-welcome {
+    float: right;
+    clear: right;
+    text-align: center;
+    width: 50%;
+}
+
+.myImg {
+    border-radius: 300vw;
+    box-shadow: 1vw 1vw 1vw -1vw #000;
+    width: 30vw;
+}
+
+.icons {
+    margin-top: 2vw;
+}
+
+.icons img {
+    width: 3vw;
+    margin: 2.5vw;
+}
+
+iframe {
+    width: 100%;
+    height: 60vw;
+}
+
+.banner {
+    width: 100%;
+    height: 33vw;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.formSection {
+    border: solid var(--lightaccent);
+    border-radius: 1vw;
+    padding: 3vw 1vw 3vw 2vw;
+    margin-bottom: 1vw;
+}
+
+h1 {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+    font-family: var(--font-1);
+    text-decoration: underline;
+    color: var(--shade);
+}
+
+h2 {
+    font-size: 3.2vw;
+    font-family: var(--font-1);
+}
+
+label {
+    font-size: 1.2vw;
+}
+
+input {
+    margin-top: 2vw;
+    border: 0px solid;
+    border-bottom: 0.1vw solid;
+}
+
+.submit {
+    padding: 1vw;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width: 800px) {
+
+    .left-welcome,
+    .right-welcome {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .myImg {
+        width: 60vw;
+        margin-top: 7vw;
+    }
+
+    .General p {
+        font-size: 4vw
+    }
+}
+
+div.gallery {
+    border: 0.1vw solid #ccc;
+}
+
+div.gallery:hover {
+    border: 0.1vw solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 1vw;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0.4vw;
+    float: left;
+    width: 28.99999%;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+    section > div > .servDesc {
+        font-size: 2.2vw;
+    }
+    
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    width: 10vw;
+    margin: 4vw;
+}
+
+section > div > .servDesc {
+    font-size: 1.8vw;
+}
