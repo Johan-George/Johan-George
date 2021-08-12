@@ -41,7 +41,7 @@ header::after {
 }
 
 .container_2 {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: block;
 }
@@ -72,7 +72,6 @@ nav li {
 nav a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
     color: var(--shade);
     border-top: solid #F1F2F6 0.2vw;
     transition: padding-top 100ms;
@@ -88,9 +87,9 @@ nav a:hover {
 
 .General {
     width: 100%;
-    margin: 0 auto;
     padding-top: 5vw;
     border-top: solid var(--lightaccent);
+    margin-bottom: 38vw;
 }
 
 .General p {
@@ -99,6 +98,20 @@ nav a:hover {
     font-family: var(--font-3);
     color: var(--shade);
 }
+
+.General_2 {
+    width: 100%;
+    padding-top: 5vw;
+    border-top: solid var(--lightaccent);
+}
+
+.General_2 p {
+
+    font-size: 2vw;
+    font-family: var(--font-3);
+    color: var(--shade);
+}
+
 
 .left-welcome {
     float: left;
@@ -133,10 +146,6 @@ nav a:hover {
     margin: 2.5vw;
 }
 
-iframe {
-    width: 100%;
-    height: 60vw;
-}
 
 .banner {
     width: 100%;
@@ -145,28 +154,44 @@ iframe {
     overflow: hidden;
 }
 
-.formSection {
-    border: solid var(--lightaccent);
-    border-radius: 1vw;
-    padding: 3vw 1vw 3vw 2vw;
-    margin-bottom: 1vw;
-}
-
 h1 {
     font-size: 4vw;
     margin-bottom: 3vw;
-    font-family: var(--font-1);
+    font-family: var(--font-4);
     text-decoration: underline;
     color: var(--shade);
 }
 
 h2 {
-    font-size: 3.2vw;
-    font-family: var(--font-1);
+    font-size: 3.4vw;
+    font-family: var(--font-2);
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+    font-family: var(--font-3);
+    width: 60%;
+    margin-left: 12vw;
+}
+.container h3 {
+        margin-left: 15vw;
+}
+h4 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    font-family: var(--font-1)
+}
+
+h5 {
+    font-size: 1.5vw;
+    font-family: var(--font-3)
 }
 
 label {
     font-size: 1.2vw;
+    font-family: var(--font-1);
 }
 
 input {
@@ -175,29 +200,37 @@ input {
     border-bottom: 0.1vw solid;
 }
 
-.submit {
-    padding: 1vw;
-    border-radius: 0.5vw;
-    margin-bottom: 1vw;
-    margin-left: 2vw;
+input.submit {
+    font-family: var(--font-1);
+    font-size: 2vw;
+    width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+.submit:hover {
+    background-color: #E5D4ED;
+}
 
-    .left-welcome,
-    .right-welcome {
-        width: 100%;
-        /* The width is 100%, when the viewport is 800px or smaller */
-    }
+.submit {
+    padding: 1vw 6vw 1vw 6vw;
+    border-radius: 0.6vw;
+    margin-bottom: 1vw;
+}
 
-    .myImg {
-        width: 60vw;
-        margin-top: 7vw;
-    }
+.container_2 > .reminder > ul {
+    text-align: center;
+    font-family: var(--font-3);
+    font-size: 2vw;
+}
 
-    .General p {
-        font-size: 4vw
-    }
+.container_2 > .reminder > ul > a {
+    text-decoration: none;
+    color: var(--shade);
+
+}
+
+.container_2 > .reminder > ul > a > li:hover {
+    background-color: #E5D4ED;
+    border-radius: 3vw;
 }
 
 div.gallery {
@@ -213,9 +246,13 @@ div.gallery img {
     height: auto;
 }
 
+
 div.desc {
-    padding: 1vw;
+
     text-align: center;
+    font-family: var(--font-2);
+    color: var(--shade);
+    font-size: 1vw;
 }
 
 .responsive {
@@ -223,26 +260,121 @@ div.desc {
     float: left;
     width: 28.99999%;
     margin-left: 2vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw
+    margin-top: 2vw;
+    margin-bottom: 3vw;
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
+
+    .left-welcome,
+    .right-welcome {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .myImg {
+        width: 60vw;
+        margin-top: 7vw;
+    }
+
+    .General p {
+        font-size: 4vw;
+    }
+
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    h2 {
+        font-size: 7.5vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+        margin-left: 15vw;
+    }
+    
+
+    p {
+        font-size: 2.8vw;
+    }
+
     .responsive {
-        width: 49.99999%;
+        width: 32.99999%;
         margin: 6px 0;
     }
     
-}
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
+    nav li {
+        margin-left: 1vw;
+        margin-bottom: 2vw;
     }
-    section > div > .servDesc {
-        font-size: 2.2vw;
+
+    nav a {
+        font-size: 4.8vw;
     }
     
+
+    header p {
+        font-size: 7vw;
+        margin: 2vw 0 2vw 14vw;
+    }
+
+    .General p {
+        font-size: 5vw;
+    }
+
+    div.desc {
+        font-family: var(--font-4);
+        font-size: 2vw;
+    }
+
+    label {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 5.2vw;
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .container_2 {
+        width: 70%;
+        margin-top: 6vw;
+    }
+
+    .submit {
+        padding: 3% 42% 3% 13%;
+        border-radius: 1vw;
+        margin-top: 3vw;
+    }
+    
+    input.submit {
+        font-size: 4vw;
+    }
+
+    .container_2 > .reminder > ul {
+        text-align: center;
+        font-family: var(--font-3);
+        font-size: 3vw;
+    }
+
+    .icons img {
+        width: 7vw;
+        margin: 3vw;
+        padding-bottom: 4vw;
+    }
+}
+
+.General a:hover {
+    background-color: var(--shadeaccent);
+    transition: 400ms;
 }
 
 .clearfix:after {
@@ -256,6 +388,61 @@ div.desc {
     margin: 4vw;
 }
 
-section > div > .servDesc {
-    font-size: 1.8vw;
+.reminder {
+    width: 100%;
+    text-align: center;
 }
+
+footer {
+    max-height 5vw;
+    padding: 6vw 3vw 0vw 3vw;
+    background-color: #1B263B;
+    color: var(--light);
+}
+
+footer > p {
+    text-align: right;
+}
+
+form {
+    margin-bottom: 5vw;
+}
+
+/*Footer Formatting code*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 1vw;
+    height: 20vw;
+
+    /* Should be removed. Only for demonstration */
+}
+
+.left,
+.right {
+    width: 25%;
+}
+
+.middle {
+    width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 2vw;
+}
+
+/**********************Navigation IDs*/
+
+#Transcription {}
+
+#Arrangement {}
+
+#Composition {}
